@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rosa's Dice Game</title>
+	<script
+  			src="https://code.jquery.com/jquery-3.7.1.min.js"
+  			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  			crossorigin="anonymous">
+	</script>
+	<script src="DiceGame.js"></script>
+	<link rel="stylesheet" href="DiceGame.css"/>
+</head>
+<body>
+	<h1>°❀⋆.ೃ࿔* Welcome to Rosa's Dice Game!･°❀⋆.ೃ࿔*</h1>
+	<h3>Ready to play? Just click the button to roll the dice and see who wins!!</h3>
+	
+	<!-- Game Displayed-->
+	<div class="GameDisplay">
+		<div class="player1" id="player1">
+			<h2>Player 1</h2>
+			<img id="image1" src="DicePiece1.jpeg"/>
+		</div>
+		
+		<div class="player2" id="player2">
+			<h2>Player 2</h2>
+			<img id="image2" src="DicePiece1.jpeg"/>
+		</div>
+	</div>
+		<div class="ButtonControl">
+		 <!-- Button to play game--> 
+			<button id="playButton">ROLL DICE 🎲</button>
+			<div id="resultMessage" class="resultM"></div>
+		</div>
+		
+	
+	<h3>Who will win?˙ᵕ˙</h3>
+	 <!-- Results text--> 
+	<div class="Results">
+	    <div class="Player1Score">
+	    	<h3>Player 1 Score</h3>
+	    	<h4>wins</h4>
+	    	<span class="totalWins" id="total1">0</span>
+	    </div>
+	    	
+	    <div class="Player2Score">
+	    	<h3>Player 2 Score</h3>
+	    	<h4>wins</h4>
+	    	<span class="totalWins" id="total2">0</span>
+	    </div>
+	</div>
+</body>
+</html>

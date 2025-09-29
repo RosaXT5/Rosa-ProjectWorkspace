@@ -1,0 +1,108 @@
+/** CSS file for DiceGame */
+
+	* {
+		box-sizing: border-box;
+		padding: 5px;
+		margin: 10px;
+	} 
+	
+	body {
+		font-family: "Fira Code", "Roboto Mono", "Courier New", Courier, monospace;
+		background: indianred;
+	}
+	
+	h1 {
+		text-align: center;
+		color: lavenderblush;
+		padding: 20px;
+	}
+	
+	h3 {
+		text-align: center;
+		color: lightpink;
+		font-style: italic;
+		font-size: 17px;
+	}
+	
+	.GameDisplay {
+		padding: 20px;
+		margin: 0 auto 40px;
+		align-items: center;
+		padding: 50px;
+		display: flex;
+	}
+	
+	
+	#image1, #image2 {
+		border-radius: 20px;
+		width: 150px;
+		height: 150px;
+	}
+    
+    #resultMessage {
+		font-size: 20px;
+		border-radius: 10px;
+		display: none;
+	 }
+	
+	.player1, .player2 {
+		text-align: center;
+		flex: 1;
+		font-size: 15px;
+	}
+	
+	.player1 h2, .player2 h2 {
+		margin-bottom: 20px;
+	}
+	
+	#playButton {
+		background: pink;
+		border-radius: 15px;
+		color: white;
+		font-size: 15px;
+		padding: 10px 20px;
+		margin-bottom: 10px;
+		cursor: pointer;
+	}
+	
+	.ButtonControl {
+		text-align: center;
+	}
+	
+	.Results {
+		background: rosybrown;
+		border-radius: 20px;
+		margin: 0 auto;
+		max-width: 600px;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+		text-align: center;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
+	}
+	
+	Player1Score {
+		grid-column: 1;
+		display: contents;
+	}	
+	
+	Player2Score {
+		grid-column: 2;
+		display: contents;
+	}
+	
+	.Results h3 {
+		font-size: 20px;
+		color: seashell; 
+		border: 2px solid black;
+	}
+	
+	.Results h4 {
+		font-size: 17px;
+		color: lavender;
+	}
+	
+	.totalWins {
+		font-size: 17px;
+		font-weight: bold;
+		
+	}
